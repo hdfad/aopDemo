@@ -13,11 +13,11 @@ import java.util.List;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/ss")
+@RequestMapping("/")
 public class test1 {
 
-    @RequestMapping("/a")
-    public List getA(String b,Integer i){
+    @RequestMapping("/springAopTest")
+    public List springAopTest(String b,Integer i){
         System.out.println(11);
        /* Map map = new HashMap();
         map.put("s","a");*/
