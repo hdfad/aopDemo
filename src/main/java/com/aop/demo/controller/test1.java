@@ -3,6 +3,7 @@ package com.aop.demo.controller;
 //import com.aop.demo.utils.aopinterface;
 
 
+import com.aop.demo.controller.aop.CalibrationOfParameters;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -25,5 +26,12 @@ public class test1 {
        list.add(b);
        list.add(i);
         return list;
+    }
+
+    @RequestMapping("/t2")
+    @CalibrationOfParameters
+    public String springAopTests( String b){
+        System.out.println(b);
+        return ".......";
     }
 }
